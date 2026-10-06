@@ -16,7 +16,6 @@ git push -u origin main
 אחר כך: **Settings → Pages → Source: Deploy from a branch → `main` / `(root)`**.
 האתר יעלה בכתובת `https://<USERNAME>.github.io/lachish-sunset-tour/`.
 
-כדי שתופיע תמונה בתצוגה המקדימה בוואטסאפ, צריך לעדכן את `og:image` ב־`index.html` עם שם המשתמש שלך.
 
 ## קרדיט לתמונות
 - שקיעות בלכיש: [Beny Shlevich](https://www.flickr.com/photos/17088109@N00/), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
