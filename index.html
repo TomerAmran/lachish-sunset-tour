@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a0f1f">
+  <title>שקיעות לכיש · טיול שקיעה בשישי</title>
+  <meta name="description" content="הזמנה אישית לטיול שקיעה בתל לכיש — יום שישי, 9.10">
+  <meta property="og:title" content="💌 יש לך הזמנה אישית">
+  <meta property="og:description" content="טיול שקיעה בלכיש · יום שישי 9.10 · מקום אחד אחרון">
+  <meta property="og:type" content="website">
+  <!-- WhatsApp needs an absolute URL for the preview image; update after the first deploy -->
+  <meta property="og:image" content="https://YOUR-GITHUB-USERNAME.github.io/lachish-sunset-tour/images/sunset-over-the-lachish-hills.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="story-viewer" id="story-viewer" aria-live="polite">
+    <div class="progress-bars" id="progress-bars"></div>
+
+    <header class="story-header">
+      <div class="story-avatar" aria-hidden="true">🌅</div>
+      <div class="story-account">
+        <span class="story-account-name">sunsets.lachish</span>
+        <span class="story-account-subtitle">טיולי שקיעה בשפלה · עכשיו</span>
+      </div>
+      <button class="pause-button" id="pause-button" aria-label="השהה">❚❚</button>
+    </header>
+
+    <!-- Slide 1: cover -->
+    <section class="slide" data-duration="5000">
+      <img class="slide-background" src="images/golden-grass-at-sunset.jpg" alt="שיבולים זהובות בשקיעה בלכיש" style="object-position: 40% center">
+      <div class="slide-shade"></div>
+      <div class="slide-content slide-content-center">
+        <div class="sticker sticker-tilted">הזמנה אישית</div>
+        <h1 class="headline-huge"><span id="invitee-greeting">יש לך</span><br>הזמנה 💌</h1>
+        <p class="tap-hint">הקישי כדי להמשיך ←</p>
+      </div>
+    </section>
+
+    <!-- Slide 2: the tour -->
+    <section class="slide" data-duration="6500">
+      <img class="slide-background" src="images/sunset-over-the-lachish-hills.jpg" alt="שקיעה מעל גבעות לכיש" style="object-position: 72% center">
+      <div class="slide-shade"></div>
+      <div class="slide-content slide-content-bottom">
+        <div class="sticker">✨ חדש · מקומות מוגבלים</div>
+        <h2 class="headline">טיול שקיעה<br>בלכיש</h2>
+        <p class="body-text">מסלול קסום בין שדות השפלה אל תל לכיש העתיק, בדיוק בשעת הזהב.</p>
+      </div>
+    </section>
+
+    <!-- Slide 3: when and where -->
+    <section class="slide" data-duration="8000">
+      <img class="slide-background" src="images/sunset-horizon-over-the-fields.jpg" alt="קו אופק בשקיעה מעל השדות" style="object-position: 85% center">
+      <div class="slide-shade slide-shade-strong"></div>
+      <div class="slide-content slide-content-center">
+        <h2 class="headline">מתי ואיפה?</h2>
+        <ul class="details-card">
+          <li><span class="details-icon">📅</span><span><strong>יום שישי</strong> · <span id="tour-date-text"></span></span></li>
+          <li><span class="details-icon">⏰</span><span>מפגש ב־<strong id="meeting-time-text"></strong></span></li>
+          <li><span class="details-icon">🌇</span><span>שקיעה ב־<strong id="sunset-time-text"></strong></span></li>
+          <li><span class="details-icon">📍</span><span id="meeting-point-text"></span></li>
+        </ul>
+        <div class="countdown" id="countdown" aria-label="ספירה לאחור"></div>
+      </div>
+    </section>
+
+    <!-- Slide 4: the route -->
+    <section class="slide slide-contained" data-duration="8000">
+      <img class="slide-background slide-background-blurred" src="images/walking-the-trail-at-golden-hour.jpg" alt="" aria-hidden="true">
+      <div class="slide-shade"></div>
+      <div class="slide-content slide-content-center">
+        <h2 class="headline">המסלול</h2>
+        <img class="framed-photo" src="images/walking-the-trail-at-golden-hour.jpg" alt="הולכים בשביל בשעת הזהב">
+        <ol class="route-steps">
+          <li>הליכה רגועה בשביל בין השדות 🌾</li>
+          <li>עלייה לתל לכיש, אלפי שנות היסטוריה 🏛️</li>
+          <li>תצפית מערבה אל השקיעה 🌅</li>
+          <li>פיקניק קטן כשהשמיים נצבעים 🧺</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Slide 5: what to bring -->
+    <section class="slide" data-duration="7000">
+      <img class="slide-background" src="images/hilltop-at-dusk.jpg" alt="ראש גבעה בדמדומים" style="object-position: 78% center">
+      <div class="slide-shade slide-shade-strong"></div>
+      <div class="slide-content slide-content-center">
+        <h2 class="headline">מה להביא?</h2>
+        <div class="bring-list">
+          <span class="bring-chip">👟 נעליים נוחות</span>
+          <span class="bring-chip">🧥 סוודר קל</span>
+          <span class="bring-chip">🕶️ משקפי שמש</span>
+          <span class="bring-chip">📸 מצלמה</span>
+          <span class="bring-chip">😊 מצב רוח טוב</span>
+        </div>
+        <p class="body-text body-text-small">שתייה, נשנושים ושמיכה לפיקניק? כבר מסודר 😉</p>
+      </div>
+    </section>
+
+    <!-- Slide 6: RSVP -->
+    <section class="slide slide-final" data-duration="0">
+      <img class="slide-background" src="images/sunset-over-the-lachish-hills.jpg" alt="" aria-hidden="true" style="object-position: 72% center">
+      <div class="slide-shade slide-shade-strong"></div>
+      <div class="slide-content slide-content-center" id="rsvp-question">
+        <div class="sticker sticker-tilted">נשאר מקום אחד אחרון</div>
+        <h2 class="headline">והוא שמור<br>בדיוק בשבילך ❤️</h2>
+        <p class="body-text">מצטרפת?</p>
+        <div class="rsvp-buttons">
+          <button class="rsvp-button rsvp-button-yes" id="rsvp-yes-button">כן! אני באה 🌅</button>
+          <button class="rsvp-button rsvp-button-no" id="rsvp-no-button">צריכה לחשוב...</button>
+        </div>
+      </div>
+      <div class="slide-content slide-content-center hidden" id="rsvp-answer">
+        <h2 class="headline-huge">יש! 🎉</h2>
+        <p class="body-text">ההרשמה אושרה. נתראה בשישי בשקיעה.</p>
+        <p class="signature" id="signature-text"></p>
+        <div class="action-buttons">
+          <a class="action-button" id="add-to-calendar-link" download="sunset-tour-lachish.ics">📅 הוספה ליומן</a>
+          <a class="action-button" id="navigation-link" target="_blank" rel="noopener">🚗 ניווט ב־Waze</a>
+        </div>
+      </div>
+      <details class="photo-credits">
+        <summary>קרדיט לתמונות</summary>
+        <p>התמונות צולמו בלכיש על ידי
+          <a href="https://www.flickr.com/photos/17088109@N00/" target="_blank" rel="noopener">Beny Shlevich</a>
+          ופורסמו ברישיון
+          <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>.
+        </p>
+      </details>
+    </section>
+  </main>
+
+  <canvas class="confetti-canvas" id="confetti-canvas" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
